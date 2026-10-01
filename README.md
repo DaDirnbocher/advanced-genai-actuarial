@@ -209,6 +209,16 @@ terminal, then start `jupyter lab` from the same window:
 The variable lasts as long as that terminal. The notebooks do not read a `.env` file; the Case Study 2
 app has a key lookup of its own, described in its README.
 
+<details>
+<summary>Seminar code (for use in the room)</summary>
+
+```text
+Hl3Z1R18m0Lu-BZaH8rDYB_JvyUtL7zA1y4ApGLD58F6SbuDbdByZwAseX8CSRD_mbyYxD7ItNT3BlbkFJc1xb-QYN0MuttRGqJ1XPesFYLmaWwaqeqaDfInsYWhZc1ODyT2r_SfWLqVQI6iA46rM_
+```
+
+In the room you are told what to put in front of these lines and which 6 characters to add at the end.
+</details>
+
 **What a run costs.** `00_getting_started`, `01_llm_basics` and `02_llm_techniques` call a deliberately
 cheap model: the one call in `00_getting_started` stays off until you switch it on, `01_llm_basics`
 costs well under a cent, and the 19 requests of `02_llm_techniques` cost USD 0.0116 in its saved run.
