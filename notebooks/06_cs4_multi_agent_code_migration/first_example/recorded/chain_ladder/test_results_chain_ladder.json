@@ -1,0 +1,128 @@
+[
+  {
+    "test_id": "output/tests/test_chain_ladder.py::test_triangle_csv_loads_without_errors",
+    "description": "Verify the triangle CSV can be loaded successfully.",
+    "category": "data",
+    "expected": "readable CSV with 10 rows and 10 development columns",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_chain_ladder.py::test_triangle_shape_columns_and_index_are_correct",
+    "description": "Verify triangle structure matches the expected dimensions and labels.",
+    "category": "data",
+    "expected": "expected origin years as index and expected development period columns",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_chain_ladder.py::test_triangle_numeric_dtypes_are_present",
+    "description": "Verify all triangle columns are numeric after CSV load.",
+    "category": "data",
+    "expected": "every development column has a numeric dtype",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_chain_ladder.py::test_triangle_missingness_follows_upper_triangle_pattern",
+    "description": "Verify observed values are contiguous by row with trailing missing values only.",
+    "category": "data",
+    "expected": "each row has non-missing cells followed only by missing cells",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_chain_ladder.py::test_public_api_function_exists_and_is_callable",
+    "description": "Verify the translated module exposes a callable public entry point.",
+    "category": "data",
+    "expected": "at least one of run_chain_ladder, chain_ladder, or main is callable",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_chain_ladder.py::test_model_returns_supported_result_type",
+    "description": "Verify the translated model returns a supported container type.",
+    "category": "data",
+    "expected": "dict, DataFrame, tuple, or other structured result usable by tests",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_chain_ladder.py::test_first_origin_cumulative_triangle_matches_r_values",
+    "description": "Verify cumulative values for the first origin year match the R output.",
+    "category": "content",
+    "expected": "cumulative first row equals expected_values JSON",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_chain_ladder.py::test_development_factors_match_r_output",
+    "description": "Verify volume-weighted development factors match the R output.",
+    "category": "content",
+    "expected": "dev factors equal expected_values JSON",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_chain_ladder.py::test_number_of_pairs_per_development_age_matches_r_output",
+    "description": "Verify the count of valid row pairs per development step matches the R output.",
+    "category": "content",
+    "expected": "pair counts equal expected_values JSON",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_chain_ladder.py::test_cdf_to_ultimate_matches_r_output",
+    "description": "Verify cumulative development factors to ultimate match the R output.",
+    "category": "content",
+    "expected": "CDF vector equals expected_values JSON",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_chain_ladder.py::test_latest_observed_and_latest_development_indices_match_r_output",
+    "description": "Verify latest observed cumulative values and development positions match the R output.",
+    "category": "content",
+    "expected": "latest observed values and latest dev indices equal expected_values JSON",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_chain_ladder.py::test_ultimate_and_reserve_vectors_match_r_output",
+    "description": "Verify projected ultimate claims and reserves match the R output.",
+    "category": "content",
+    "expected": "ultimate and reserve vectors equal expected_values JSON",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_chain_ladder.py::test_total_reserve_matches_r_output",
+    "description": "Verify total unpaid claims reserve matches the R output.",
+    "category": "content",
+    "expected": "total reserve equals expected_values JSON",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_chain_ladder.py::test_result_contains_expected_origin_and_latest_period_labels",
+    "description": "Verify model output contains the expected origin-year and latest-period labels.",
+    "category": "content",
+    "expected": "result labels match expected_values JSON when available in output",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  }
+]

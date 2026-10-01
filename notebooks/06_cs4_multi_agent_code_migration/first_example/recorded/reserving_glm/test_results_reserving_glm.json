@@ -1,0 +1,137 @@
+[
+  {
+    "test_id": "output/tests/test_reserving_glm.py::test_module_public_functions_exist",
+    "description": "Verify required public API functions are present and callable.",
+    "category": "data",
+    "expected": "all named functions exist and are callable",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_reserving_glm.py::test_claims_triangle_loads_with_expected_shape",
+    "description": "Verify claims triangle loads and has expected dimensions.",
+    "category": "data",
+    "expected": "shape matches expected_values JSON",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_reserving_glm.py::test_claims_triangle_columns_and_index",
+    "description": "Verify triangle column names and origin-year index labels are correct.",
+    "category": "data",
+    "expected": "dev_1..dev_15 columns and 2005..2019 index range",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_reserving_glm.py::test_claims_triangle_missing_pattern_is_lower_triangle",
+    "description": "Verify triangle has no unexpected NaN values in observed cells.",
+    "category": "data",
+    "expected": "upper triangle observed and lower triangle missing",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_reserving_glm.py::test_policy_data_loads_and_contains_expected_tables",
+    "description": "Verify SQLite policy data loads into expected table objects.",
+    "category": "data",
+    "expected": "dict with premium_by_year, policies, and claims tables",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_reserving_glm.py::test_premium_summary_shape_and_columns",
+    "description": "Verify premium summary has expected shape and columns.",
+    "category": "data",
+    "expected": "15 rows, 4 columns with premium summary fields",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_reserving_glm.py::test_prepare_glm_data_returns_expected_structure",
+    "description": "Verify GLM preparation returns expected rows, columns, and dtypes.",
+    "category": "data",
+    "expected": "120 rows and factor/category-like origin/dev fields present",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_reserving_glm.py::test_fit_and_prediction_return_types",
+    "description": "Verify GLM fit result and reserve predictions return usable objects.",
+    "category": "data",
+    "expected": "fit contains model and phi; predictions are DataFrame with predicted column",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_reserving_glm.py::test_dispersion_parameter_matches_r",
+    "description": "Verify fitted dispersion parameter matches R ground truth.",
+    "category": "content",
+    "expected": "phi approximately equals expected_values JSON",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_reserving_glm.py::test_predictions_sum_to_expected_total_reserve",
+    "description": "Verify predicted lower-triangle amounts sum to total reserve from R.",
+    "category": "content",
+    "expected": "total reserve approximately equals expected_values JSON",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_reserving_glm.py::test_reserves_by_origin_match_r",
+    "description": "Verify reserve totals by origin period match R ground truth.",
+    "category": "content",
+    "expected": "grouped reserves approximately equal expected_values JSON",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_reserving_glm.py::test_run_analysis_total_reserve_matches_r",
+    "description": "Verify end-to-end analysis returns total reserve consistent with R.",
+    "category": "content",
+    "expected": "total reserve approximately equals expected_values JSON",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_reserving_glm.py::test_first_year_earned_premium_matches_r",
+    "description": "Verify first origin year earned premium matches R ground truth.",
+    "category": "content",
+    "expected": "first year earned premium approximately equals expected_values JSON",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_reserving_glm.py::test_bootstrap_output_has_expected_shape_and_sanity",
+    "description": "Verify bootstrap output length and basic sanity for stochastic results.",
+    "category": "content",
+    "expected": "1000 finite nonnegative simulations",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  },
+  {
+    "test_id": "output/tests/test_reserving_glm.py::test_bootstrap_reproducibility_with_seed",
+    "description": "Verify bootstrap is reproducible within Python when using the same seed.",
+    "category": "content",
+    "expected": "repeated calls with same seed produce identical arrays",
+    "actual": "computed at runtime",
+    "status": "PASSED",
+    "detail": ""
+  }
+]

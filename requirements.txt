@@ -38,6 +38,11 @@ openai==3.14.0
 langchain-core==1.6.3  # not imported directly: required by langgraph, pinned for reproducibility
 langgraph==1.2.11
 langgraph-checkpoint==4.2.0
+# The first example of notebook 06 (the article's original notebook) builds its agents with LangChain's
+# create_agent and "openai:..." model strings. langchain-openai 1.6.2 is the newest release that accepts
+# langchain-core 1.6.3; both pins were checked on 2026-10-02.
+langchain==1.4.3
+langchain-openai==1.6.2
 pydantic==2.13.5
 httpx==0.28.1
 requests==2.32.5  # downloads of annual reports and data sets in notebook 04

@@ -48,6 +48,14 @@ open access. Figures and tables adapted from the article are redrawn from scratc
 line naming the article and the figure or table number. Reproducing them elsewhere requires the
 rights holder's permission, not this licence.
 
+The first example of Case Study 4,
+[`notebooks/06_cs4_multi_agent_code_migration/first_example/`](notebooks/06_cs4_multi_agent_code_migration/first_example/),
+is the notebook published with the article at
+[IAA-AITF/Actuarial-AI-Case-Studies](https://github.com/IAA-AITF/Actuarial-AI-Case-Studies), with its
+example and test files. It keeps that repository's terms — MIT for the code and the notebook
+(Copyright (c) 2025 International Actuarial Association; see the folder's `LICENSE`), CC BY 4.0 for
+textual material — and the folder's `README.md` lists the changes made for this seminar.
+
 ### 3. Dependencies
 
 Every installed package keeps its own licence. PyMuPDF in particular is licensed under

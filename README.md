@@ -2,7 +2,7 @@
 
 Companion material for **EAA Seminar E0572**, held on **1–2 October 2026 in Vilnius, Lithuania**,
 taught by **Dr Simon Hatzesberger**: eight Jupyter notebooks that you can read on this page and run
-in your web browser.
+in your web browser, plus the article's original migration notebook as a first example for Case Study 4.
 
 **New here?** Do the short laptop check below before you travel. Everything else on this page can
 wait until the seminar.
@@ -97,6 +97,7 @@ in Colab to run.
 | [`04_cs2_rag_market_comparison`](notebooks/04_cs2_rag_market_comparison/04_cs2_rag_market_comparison.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/simonhatzesberger/advanced-genai-actuarial/blob/main/notebooks/04_cs2_rag_market_comparison/04_cs2_rag_market_comparison.ipynb) | Case Study 2: retrieval-augmented generation over three insurers' annual reports: chunking, retrieval, structured outputs, exact-match scoring and a small model benchmark, plus an extra exercise on embeddings as pricing features |
 | [`05_cs3_vehicle_damage_vision`](notebooks/05_cs3_vehicle_damage_vision/05_cs3_vehicle_damage_vision.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/simonhatzesberger/advanced-genai-actuarial/blob/main/notebooks/05_cs3_vehicle_damage_vision/05_cs3_vehicle_damage_vision.ipynb) | Case Study 3: classifying vehicle damage from photos: a fine-tuned GPT-4o against zero-shot models, evaluation with intervals and a near-copy check, location and context, and a fraud-awareness exercise with a generated fake |
 | [`06_cs4_multi_agent_code_migration`](notebooks/06_cs4_multi_agent_code_migration/06_cs4_multi_agent_code_migration.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/simonhatzesberger/advanced-genai-actuarial/blob/main/notebooks/06_cs4_multi_agent_code_migration/06_cs4_multi_agent_code_migration.ipynb) | Case Study 4: five LLM agents migrate the article's R reserving scripts (chain ladder, GLM with bootstrap) to Python in a LangGraph graph: fenced tools, a test suite that runs the translation on a hidden second triangle, capped retries, the article's results next to what re-running them taught, a leak experiment, and a second example of agentic data analysis on freMTPL2 in which code checks every number; exercises on prompt injection, a VBA migration and a human approval node |
+| [`06 … first_example`](notebooks/06_cs4_multi_agent_code_migration/first_example/R_to_Python_Migration.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/simonhatzesberger/advanced-genai-actuarial/blob/main/notebooks/06_cs4_multi_agent_code_migration/first_example/R_to_Python_Migration.ipynb) | Case Study 4, first example: the article's original notebook. Five agents in a fixed LangGraph graph migrate a chain-ladder script (and a GLM with bootstrap) from R to Python, checked by a test suite written in advance; runs without a key on recorded runs |
 | [`07_cs5_report_qa`](notebooks/07_cs5_report_qa/07_cs5_report_qa.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/simonhatzesberger/advanced-genai-actuarial/blob/main/notebooks/07_cs5_report_qa/07_cs5_report_qa.ipynb) | Case Study 5: drafting the new SFCR policyholder part (Solvency II review) for a fictitious insurer, with code inserting every number and the prescribed text, then checking it: deterministic checks first, LLM checks that stay warnings unless code confirms them, planted and hold-out errors against a clean control, a judge measured on its own labelled test set, a Lithuanian machine translation with its checks, and a human sign-off; exercises on planting errors, writing a check and tuning the judge |
 
 The notebooks ship **with their outputs saved**, so you can read what the models answered without
@@ -272,6 +273,7 @@ advanced-genai-actuarial/
 │   │   └── data/                          ← recorded predictions and the near-copy screen
 │   ├── 06_cs4_multi_agent_code_migration/
 │   │   ├── 06_cs4_multi_agent_code_migration.ipynb
+│   │   ├── first_example/                 ← the article's original notebook, with its R scripts, tests and recorded runs
 │   │   └── data/                          ← case-study bundle and recorded runs
 │   └── 07_cs5_report_qa/
 │       ├── 07_cs5_report_qa.ipynb
