@@ -108,6 +108,12 @@ running anything. Re-running a cell replaces its output with a fresh answer.
 step-by-step Streamlit app for the live demonstration. You do not need it to follow the seminar. Its
 README explains the setup; it needs the same single OpenAI key as the notebooks.
 
+[`apps/cs5_report_generation`](apps/cs5_report_generation/) drafts the SFCR sections E.1 (own funds) and
+E.2 (SCR and MCR) for three fictitious insurers from Excel workbooks, in two ways — last year's text with
+the figures updated, and a language model with the prior years' texts as examples — and puts both drafts
+through the same checks. Its sample workbooks can be downloaded, edited and uploaded again, and it runs
+without a key on recorded model runs. Its README explains the setup.
+
 ---
 
 ## About the seminar
@@ -272,7 +278,8 @@ advanced-genai-actuarial/
 │       └── data/                          ← case-study bundle and recorded runs
 │
 └── apps/
-    └── cs2_market_comparison/             ← the Case Study 2 pipeline as a Streamlit app
+    ├── cs2_market_comparison/             ← the Case Study 2 pipeline as a Streamlit app
+    └── cs5_report_generation/             ← Case Study 5: drafting and checking SFCR E.1 and E.2, with sample workbooks
 ```
 
 Each notebook folder holds one Jupyter notebook, saved with its outputs. Where a notebook reads small

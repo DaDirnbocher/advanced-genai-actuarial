@@ -1,0 +1,6 @@
+# API key.
+.env
+
+# Machine-local files.
+_local/
+__pycache__/

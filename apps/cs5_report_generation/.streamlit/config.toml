@@ -1,0 +1,21 @@
+# Seminar look: EAA cyan accent, EAA navy text, white background, sans-serif.
+# Streamlit reads this file from the folder it is started in, so start the app from here
+# (or with `python app.py`, which changes into this folder first).
+
+[theme]
+base = "light"
+primaryColor = "#009CDB"
+textColor = "#0F2B72"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F3F6FA"
+font = "sans-serif"
+
+[browser]
+gatherUsageStats = false
+
+[server]
+# Listen on this laptop only. Otherwise anyone on the venue Wi-Fi could open the app
+# through the laptop's network address and spend the lecturer's API key.
+address = "localhost"
+# The Case Study 2 app uses 8501; this one uses 8502, so both can run side by side.
+port = 8502
