@@ -2,7 +2,8 @@
 
 Companion material for **EAA Seminar E0572**, held on **1–2 October 2026 in Vilnius, Lithuania**,
 taught by **Dr Simon Hatzesberger**: eight Jupyter notebooks that you can read on this page and run
-in your web browser, plus the article's original migration notebook as a first example for Case Study 4.
+in your web browser, plus the article's original migration notebook as a first example for Case Study 4,
+and the slides as a PDF.
 
 **New here?** Do the short laptop check below before you travel. Everything else on this page can
 wait until the seminar.
@@ -114,6 +115,15 @@ E.2 (SCR and MCR) for three fictitious insurers from Excel workbooks, in two way
 the figures updated, and a language model with the prior years' texts as examples — and puts both drafts
 through the same checks. Its sample workbooks can be downloaded, edited and uploaded again, and it runs
 without a key on recorded model runs. Its README explains the setup.
+
+---
+
+## Slides
+
+[`slides/E0572_slides.pdf`](slides/E0572_slides.pdf) holds the slides of the seminar as presented on
+1–2 October 2026: 126 slides, in the order of the two days. Each Live Demonstration slide carries a QR
+code that opens the matching notebook in Colab. On slide 18 the model providers are named rather than
+shown with their logos.
 
 ---
 
@@ -279,6 +289,9 @@ advanced-genai-actuarial/
 │       ├── 07_cs5_report_qa.ipynb
 │       └── data/                          ← case-study bundle and recorded runs
 │
+├── slides/
+│   └── E0572_slides.pdf                   ← the slides as presented, 1–2 October 2026
+│
 └── apps/
     ├── cs2_market_comparison/             ← the Case Study 2 pipeline as a Streamlit app
     └── cs5_report_generation/             ← Case Study 5: drafting and checking SFCR E.1 and E.2, with sample workbooks
@@ -313,10 +326,12 @@ extended with exercises.
 |---|---|
 | Code | MIT — see [LICENSE](LICENSE) |
 | Prose, notebook markdown, figures | CC BY 4.0 — see [LICENSE-CONTENT.md](LICENSE-CONTENT.md) |
+| Slides | CC BY 4.0 for the author's own text and figures — see [LICENSE-CONTENT.md](LICENSE-CONTENT.md) |
 
 Neither licence covers EAA branding, material adapted from the article above, third-party datasets,
-or the installed dependencies. [LICENSE-CONTENT.md](LICENSE-CONTENT.md) sets out each exception, and
-each notebook's `data/README.md` gives the source of the files in its folder.
+the third-party material the slides quote, or the installed dependencies.
+[LICENSE-CONTENT.md](LICENSE-CONTENT.md) sets out each exception, and each notebook's `data/README.md`
+gives the source of the files in its folder.
 
 ---
 
